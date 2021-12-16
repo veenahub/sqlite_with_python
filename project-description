@@ -1,0 +1,49 @@
+Description
+You will create a program with Python that has a connection to a database.
+It is optional if the program is run via the terminal or with Flask and templates.
+
+If you drive via the terminal, I recommend that you look a little better with the Python package Curses
+Video tutorial on Curses
+
+The database must contain artists, albums and songs.
+Via user input, you should be able to search for artists, see songs from an album, etc.
+artists must contain at least name and description
+albums must contain at least title , description and year_released
+songs must contain at least name and duration in seconds
+Draw E / R digram where artists have albums and albums have songs.
+
+Then create the database via Python. Use the database.py help module from the Python - SQLite article to facilitate communication between Python and SQLite.
+
+Here is a complete database, which also has thumbnails and youtube_id to be able to use in a Flask template.
+music.db
+
+The artists in this database are: Ed Sheeran, Prince, The Weeknd, Imagine Dragons, In Flames and Three Days Grace.
+
+Features
+You will solve the following features through Python and SQLite. Some of you create functions for which you see via the code. Other features are good if they can be interacted with via either the terminal or an interface with Flask templates.
+
+Do as many as you can.
+Create the tables using Python
+Add sample data via Python: 3 artists , each artist has 3 albums , each album has about 10 songs
+An album should be without year_released
+Print the names of all the artists
+Print the oldest album
+Print the album with length of playing time
+Update the album that is missing year_released by a year
+Add data via input
+Be able to create an artist
+Be able to create an album for an artist
+Be able to add songs to an album
+Be able to delete an artist, album or song via input
+Remember: If you delete an artist, should their albums and songs also be deleted then?
+Tip: Check out “Cascade on Delete” in SQLite
+Print the average length of a song in an album
+View the longest song from each album
+View the number of songs each artist has
+Be able to search for artists via input
+Be able to search for songs via input
+Be able to show details about an artist where you also see the artist's all albums
+Be able to show details about an album where you also see the album's songs
+The detail page for an artist and album also shows how many songs each album has, and total playing time for an album
+Allows all lists to be sorted by different properties, such as name , year_released or duration
+
